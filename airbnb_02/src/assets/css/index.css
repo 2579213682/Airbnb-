@@ -1,0 +1,21 @@
+:root {
+  --primary-color: #ff385c;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  color: #484848;
+  text-decoration: none;
+}
+img {
+  vertical-align: top;
+}
+ul,
+li {
+  list-style: none;
+}
+body {
+  font-size: 14px;
+}

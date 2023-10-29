@@ -1,0 +1,20 @@
+/* 进入动画 */
+.why-appear,
+.why-enter {
+  opacity: 0;
+}
+
+.why-enter-active {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
+
+/* 离开动画 */
+.why-exit {
+  opacity: 1;
+}
+
+.why-exit-active {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
