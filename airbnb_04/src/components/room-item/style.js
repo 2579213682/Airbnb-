@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export const ItemWrapper = styled.div `
+
+export const ItemWrapper = styled.div`
   flex-shrink: 0;
   box-sizing: border-box;
-  width: ${(props) => props.itemWidth};
+  width: ${props => props.itemWidth};
   padding: 8px;
 
   .inner {
@@ -26,14 +27,17 @@ export const ItemWrapper = styled.div `
       object-fit: cover;
     }
   }
+
   .slider {
     position: relative;
     cursor: pointer;
+
     &:hover {
       .control {
         display: flex;
       }
     }
+
     .control {
       position: absolute;
       z-index: 1;
@@ -51,18 +55,10 @@ export const ItemWrapper = styled.div `
         align-items: center;
         width: 83px;
         height: 100%;
-        background: linear-gradient(
-          to left,
-          transparent 0%,
-          rgba(0, 0, 0, 0.25) 100%
-        );
+        background: linear-gradient(to left, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
 
         &.right {
-          background: linear-gradient(
-            to right,
-            transparent 0%,
-            rgba(0, 0, 0, 0.25) 100%
-          );
+          background: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.25) 100%);
         }
       }
     }
@@ -71,16 +67,16 @@ export const ItemWrapper = styled.div `
       position: absolute;
       z-index: 9;
       bottom: 10px;
-      width: 30%;
       left: 0;
       right: 0;
+      width: 30%;
       margin: 0 auto;
 
       .item {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 14.28%;
+        width: 14.29%;
 
         .dot {
           width: 6px;
@@ -91,7 +87,6 @@ export const ItemWrapper = styled.div `
           &.active {
             width: 8px;
             height: 8px;
-            /* background-color: red; */
           }
         }
       }
@@ -102,35 +97,37 @@ export const ItemWrapper = styled.div `
     margin: 10px 0 5px;
     font-size: 12px;
     font-weight: 700;
-    color: ${(props) => props.verifyColor};
+    color: ${props => props.verifyColor};
   }
 
   .name {
     font-size: 16px;
     font-weight: 700;
 
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
+    overflow: hidden;  
+    text-overflow: ellipsis; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 2; 
     -webkit-box-orient: vertical;
   }
 
   .price {
     margin: 8px 0;
   }
+
   .bottom {
     display: flex;
     align-items: center;
     font-size: 12px;
     font-weight: 600;
-    color: ${(props) => props.theme.text.primaryColor};
+    color: ${props => props.theme.text.primaryColor};
 
     .count {
       margin: 0 2px 0 4px;
     }
-    .MuiRating-icon {
+
+    .MuiRating-decimal {
       margin-right: -2px;
     }
   }
-`;
+`

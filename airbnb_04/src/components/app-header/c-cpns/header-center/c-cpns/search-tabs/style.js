@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const TabsWrapper = styled.div`
+export const TabsWrapper = styled.div `
   display: flex;
   color: ${props => props.theme.isAlpha ? "#fff": "#222"};
 
@@ -11,6 +11,7 @@ export const TabsWrapper = styled.div`
     margin: 10px 16px;
     font-size: 16px;
     cursor: pointer;
+
 
     &.active .bottom {
       position: absolute;

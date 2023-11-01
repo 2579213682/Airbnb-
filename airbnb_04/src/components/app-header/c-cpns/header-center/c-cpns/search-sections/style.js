@@ -7,6 +7,7 @@ export const SectionsWrapper = styled.div`
   border-radius: 32px;
   border: 1px solid #ddd;
   background-color: #fff;
+  margin-top: 20px;
 
   .item {
     flex: 1;
@@ -43,4 +44,4 @@ export const SectionsWrapper = styled.div`
       background-color: #eee;
     }
   }
-`
+`;
